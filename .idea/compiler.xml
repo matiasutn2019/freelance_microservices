@@ -7,9 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="notification" />
+        <module name="apigw" />
+        <module name="clients" />
         <module name="fraud" />
+        <module name="amqp" />
+        <module name="eureka-server" />
         <module name="customer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="k8s" target="17" />
+      <module name="ks8.minikube" target="17" />
+      <module name="server" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
